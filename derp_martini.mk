@@ -12,11 +12,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/martini/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 
 TARGET_BOOT_ANIMATION_RES := 1080
-PRODUCT_NAME := aosp_martini
+PRODUCT_NAME := derp_martini
 PRODUCT_DEVICE := martini
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -36,3 +36,6 @@ PRIVATE_BUILD_DESC="OnePlus9RT-user 13 TP1A.220905.001 R.119abdf-1-2 release-key
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
     
 BUILD_FINGERPRINT := OnePlus/OnePlus9RT/OP5155L1:13/TP1A.220905.001/R.119abdf-1-2:user/release-keys
+
+# Derp
+DERP_BUILDTYPE := Official
